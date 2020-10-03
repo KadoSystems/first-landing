@@ -1,0 +1,40 @@
+.scroll-down-divider {
+  background-color: rgb(0,70,107);
+  height: 50px;
+}
+
+
+.scroll-down{
+  position: absolute;
+  bottom: 5px;
+  left:50%;
+  transform: translateX(-50%);
+  transition: linear;
+}
+
+.mouse{
+  width: 80px;
+  height: 40px;
+  border: solid white 2px;
+  border-radius: 2rem ;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.mouse .fa-chevron-down {
+  color: white;
+  display: block;
+  animation: move-arrow 1s alternate infinite;
+}
+
+@keyframes move-arrow {
+  0%{
+    opacity: 0;
+    transform: translateY(0rem)
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(15px)
+  }
+}

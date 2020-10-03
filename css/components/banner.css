@@ -1,9 +1,16 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 200px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 70, 107, 0.3)), url(../../images/background.jpg);
+  height: calc(100vh - 100px);
+  position: relative;
 }
 
+.banner .container {
+  position: absolute;
+  top:20%;
+  padding: 0 0 0 100px;
+}
 .banner h1 {
   color: white;
 }
@@ -12,4 +19,15 @@
   color: white;
   opacity: .7;
   font-size: 20px;
+}
+
+#phone-bottom-banner {
+  height: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: 100px;
+}
+
+#down-button {
+
 }
