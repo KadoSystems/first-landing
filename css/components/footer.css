@@ -1,18 +1,17 @@
 .footer {
   text-align: center;
-  padding: 60px;
-  background-color: #2c2b2b;
+  padding: 20px;
+  background-color: rgb(0,70,107);
+  display: block;
 }
 
-.footer a {
-  font-size: 30px;
-  color:  #1EDD88;
-}
 
 .footer p {
-  color: #6B6C6C;
+  color: white;
+  margin-bottom: 5px;
 }
 
-.footer .fas {
-  color: #BF0F12;
+.footer img {
+  width: 50vw;
 }
+
