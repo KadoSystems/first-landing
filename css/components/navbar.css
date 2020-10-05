@@ -10,8 +10,12 @@
   z-index: 1;
 }
 
-#full-logo-small {
+.full-logo-small {
   max-height: 80%;
+}
+
+.full-logo-small:hover {
+  cursor: pointer;
 }
 
 .navbar h4 {

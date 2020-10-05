@@ -5,7 +5,6 @@
 @import url(components/banner.css);
 @import url(components/buttons.css);
 @import url(components/cards.css);
-@import url(components/container.css);
 @import url(components/footer.css);
 @import url(components/navbar.css);
 @import url(components/scroll-down.css);
@@ -14,7 +13,9 @@
 body {
   margin: 0;
   font-family: Open Sans;
+  scroll-behavior: smooth;
 }
+
 
 h1, h2, h3, h4 {
   font-family: Montserrat;
@@ -31,3 +32,10 @@ a {
 @media-viewport{
   width: device-width;
 }
+
+body {
+  scroll-behavior: smooth;
+}
+
+
+

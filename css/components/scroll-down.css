@@ -12,6 +12,11 @@
   transition: linear;
 }
 
+.scroll-down :hover{
+  cursor: pointer;
+}
+
+
 .mouse{
   width: 80px;
   height: 40px;

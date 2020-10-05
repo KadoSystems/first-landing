@@ -4,16 +4,16 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 70, 107, 0.3)), url(../../images/background.jpg);
   height: calc(100vh - 100px);
   position: relative;
+  padding: 5% 5% 0 10%;
 }
 
-.banner .container {
-  position: absolute;
-  top:15%;
-  left: 20%;
-  max-width: 80%
+.banner .banner-container {
+  max-height: 100%;
 }
 .banner h1 {
   color: white;
+  font-size: 30px;
+  transform: font-size(auto)
 }
 
 .banner p {
@@ -22,9 +22,33 @@
   font-size: 20px;
 }
 
-#phone-bottom-banner {
-  max-height: 40%;
-  position: absolute;
+.image-container {
+  position:absolute;
   bottom: 0px;
-  left: 20%;
+  height: 53%;
+}
+
+.image-container img {
+  height: 100%;
+}
+
+.btn-blue {
+  display: inline-block;
+  background-color: rgb(0,107,170);
+  padding: 16px 36px;
+  border-radius: 50px;
+  color: white;
+}
+
+.btn-big {
+  padding: 16px 36px;
+}
+
+.btn-small {
+  padding: 10px 25px;
+}
+
+.btn-blue:hover {
+   background-color: white;
+   color:rgb(0,107,170);
 }

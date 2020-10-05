@@ -11,61 +11,114 @@
 <body>
   <!-- nav bar -->
   <div class="navbar">
-    <img id="full-logo-small" src="images/full_logo_white.png" alt="">
+    <img class="full-logo-small" src="images/full_logo_white.png" alt="">
     <h4>Coming soon</h4>
   </div>
-  <!-- code a Hero / Banner section -->
+  <!-- Banner section -->
   <div class="banner">
-    <div class="container">
+    <div class="banner-container">
       <h1>Changing the way we do business</h1>
       <p>Digital business cards to strengthen you professional brand</p>
+      <button type="button" class="btn btn-blue btn-big" data-toggle="modal" data-target="#exampleModal">Stay informed</button>
     </div>
-    <img id="phone-bottom-banner" src="images/Picture1.png" alt="">
+    <div class="image-container">
+      <img src="images/Picture1.png" alt="">
+    </div>
   </div>
+
   <div class = "scroll-down-divider">
-    <a href="#functionalities" class="scroll-down">
+    <div class="scroll-down">
       <div class="mouse">
         <i class="fas fa-chevron-down"></i>
       </div>
       <span class="arrow">
         <span></span>
       </span>
-    </a>
+    </div>
   </div>
 
-  <!-- code a "How it works" section -->
-  <div id="functionalities" style="align-items: center">
-      <div class="card-function card-white">
-        <img src="images/Picture3.png" alt="">
-        <div class="text-functions" style="text-align:right">
-          <h4>Digital business cards</h4>
-          <p>First apply to one of our campuses around the world.</p>
+  <!-- "How it works" section -->
+  <div id="functionalities">
+      <div class="card-function card-white row align-items-center">
+        <div class="col-sm-12 col-md-6">
+          <img src="images/Picture3.png" alt="">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div class="text-functions">
+            <h4>Digital business cards</h4>
+            <p>Forget about unecological paper cards.</p>
+            <p>Enhance your digital brand in a remote environment.</p>
+            <p style="font-weight: bold">Give a great first impression.</p>
+          </div>
+          <button type="button" class="btn btn-blue btn-small" data-toggle="modal" data-target="#exampleModal">I'm interested</button>
         </div>
       </div>
 
-      <div class="card-function card-blue">
-        <div class="text-functions" style="text-align:left">
-            <h4>Contactless exchanges</h4>
-            <p>First apply to one of our campuses around the world.</p>
+      <div class="card-function card-blue row align-items-center">
+        <div class="col-sm-12 col-md-6">
+          <div class="text-functions">
+            <h4>Contactless and seamless exchanges</h4>
+            <p style="font-weight: bold">No more wasted time manually managing your CRM</p>
+            <p>Batch-scan your new cards.</p>
+            <p>Share your digital card and your team's on any platform.</p>
+            <p>Just a matter of seconds.</p>
+          </div>
+          <button type="button" class="btn btn-blue btn-small" data-toggle="modal" data-target="#exampleModal">I'm interested</button>
         </div>
-        <img src="images/Picture2.png" alt="">
+        <div style="margin-top: 10px" class="col-sm-12 col-md-6">
+          <img src="images/Picture2.png" alt="">
+        </div>
       </div>
 
-      <div class="card-function card-white">
-        <img src="images/Picture4.png" style="width:60%; border-radius: 5px" alt="">
-        <div class="text-functions" style="text-align:right">
+      <div class="card-function card-white row align-items-center">
+        <div class="col-sm-12 col-md-7">
+          <img src="images/Picture4.png" style="border-radius: 5px; margin-bottom: 5px" alt="">
+        </div>
+        <div class="col-sm-12 col-md-5">
+          <div class="text-functions">
             <h4>Cloud backup and contact management</h4>
-            <p>First apply to one of our campuses around the world.</p>
-        </div>
+            <p>Manage employees and their contacts.</p>
+            <p>Back up your data.</p>
+            <p>Sync it with your CRM.</p>
+            <p style="font-weight: bold">Never lose another client.</p>
+          </div>
+          <button type="button" class="btn btn-blue btn-small" data-toggle="modal" data-target="#exampleModal">I'm interested</button>
       </div>
 
   </div>
 
-  <!-- code a footer -->
+  <!-- Footer -->
   <div class="footer">
-      <img id="full-logo-small" src="images/full_logo_white.png" alt="">
-      <p>The Next Gen B2B Profesisonal Network</p>
+      <img class="full-logo-small logo-bottom" src="images/full_logo_white.png" alt="">
+      <p style="font-weight: bold">The Next Gen B2B Profesisonal Network</p>
+      <p>New York</p>
   </div>
 
+  <!-- MODAL -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Stay informed!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body" style="border: none">
+          <form>
+            <div class="form-group">
+              <label for="email">Share your email to stay updated of the product launch and latest developments</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <button type="submit" class="btn btn-blue btn-small" data-dismiss="modal">Share email</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="js/scroll.js"></script>
 </body>
 </html>
