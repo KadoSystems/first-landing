@@ -13,12 +13,11 @@
 body {
   margin: 0;
   font-family: Open Sans;
-  scroll-behavior: smooth;
 }
 
 
 h1, h2, h3, h4 {
-  font-family: Montserrat;
+  font-family: Open Sans;
 }
 
 a {
@@ -31,10 +30,6 @@ a {
 
 @media-viewport{
   width: device-width;
-}
-
-body {
-  scroll-behavior: smooth;
 }
 
 
